@@ -1,0 +1,38 @@
+ul {
+  display:flex;
+  flex-flow:wrap;
+  padding:0px 50px;
+  max-width:1000px;
+  width:100%;
+  margin:0 auto;
+
+  p {
+    margin:0 auto;
+  }
+
+  li {
+    width:32%;
+    margin-right:2%;
+    margin-bottom:2%;
+    list-style-type:none;
+    position:relative;
+    padding:50px 30px;
+    background-color:$header-color;
+
+    img {
+      max-width:15px;
+      position:absolute;
+      top:20px;
+      right:20px;
+
+      &:hover {
+        cursor:pointer;
+        opacity:.8;
+      }
+    }
+
+    &:nth-child(3n) {
+      margin-right:0;
+    }
+  }
+}

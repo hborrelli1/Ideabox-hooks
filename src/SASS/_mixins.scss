@@ -1,0 +1,23 @@
+@mixin button-style {
+  button {
+    padding:5px 10px;
+    font-size:.875rem;
+    border:0;
+    background-color:$turqoise;
+    color:#fff;
+
+    &:hover {
+      cursor:pointer;
+      opacity:.8;
+    }
+
+    &:disabled {
+      cursor:no-drop;
+      background-color:gray;
+
+      &:hover {
+        opacity:1;
+      }
+    }
+  }
+}
